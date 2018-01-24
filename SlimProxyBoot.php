@@ -62,7 +62,7 @@ $proxyClass = new \Slim\SlimHmacProxy();
  * @author Okan CIRAN
  * 
  */ 
-  $proxyClass->setRestApiBaseUrl("http://slim.okulsis.com:9990/");
+  $proxyClass->setRestApiBaseUrl("http://slim.usta.com:9990/");
   //$proxyClass->setRestApiBaseUrl("http://sanalfabrika.slim.com:9990/");
 //$proxyClass->setRestApiBaseUrl("https://slim.uretimosb.com/");
 $proxyClass->setRestApiEndPoint("index.php/");

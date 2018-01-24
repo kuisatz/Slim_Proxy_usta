@@ -22,112 +22,26 @@ class SlimHmacProxy extends \Proxy\Proxy {
 
         
         
-         //** MblLogin ----------------------
-                                    'gnlKullaniciMebKoduFindByTcKimlikNo_mbllogin' => 'restApiDefaultCall',
-                                    'gnlKullaniciFindForLoginByTcKimlikNo_mbllogin' => 'restApiDefaultCall',
-                                    'mobilfirstdata_mbllogin' => 'restApiDefaultCall',
-                                    'mobilMenu_mbllogin' => 'restApiDefaultCall',
-                                    'gnlKisiOkulListesi_mbllogin' => 'restApiDefaultCall',
-                                    'ogretmenDersProgrami_mbllogin' => 'restApiDefaultCall',
-                                    'ogretmenDersProgramiDersSaatleri_mbllogin' => 'restApiDefaultCall',
-                                    'ogretmenDersPrgDersSaatleriOgrencileri_mbllogin' => 'restApiDefaultCall',
-                                    'ogretmenVeliRandevulari_mbllogin' => 'restApiDefaultCall',
-                                    'InsertDevamsizlik_mbllogin' => 'restApiDefaultCall',
-                                    'VeliOgrencileri_mbllogin' => 'restApiDefaultCall',
-                                    'OgrenciDevamsizlikListesi_mbllogin' => 'restApiDefaultCall',
-                                    'Kurumyoneticisisubelistesi_mbllogin' => 'restApiDefaultCall',
-                                    'Kysubeogrencilistesi_mbllogin' => 'restApiDefaultCall',
-                                    'KySubeOgrenciDersListesi_mbllogin' => 'restApiDefaultCall',
-                                    'Ogretmensinavlistesi_mbllogin' => 'restApiDefaultCall',
-                                    'Yakinisinavlistesi_mbllogin' => 'restApiDefaultCall',
-                                    'KurumYoneticisiSinavListesi_mbllogin' => 'restApiDefaultCall',
-                                    'GelenMesajListesi_mbllogin' => 'restApiDefaultCall',
-                                    'OdevListesiOgretmen_mbllogin' => 'restApiDefaultCall',
-                                    'OdevListesiKurumYoneticisi_mbllogin' => 'restApiDefaultCall',
-                                    'OgretmenDersProgramiListesi_mbllogin' => 'restApiDefaultCall',
-                                    'OgrenciVeYakiniDersProgramiListesi_mbllogin' => 'restApiDefaultCall',
-                                    'KurumPersoneliSinifListesi_mbllogin' => 'restApiDefaultCall',
-                                    'KurumPersoneliDersProgramiListesi_mbllogin' => 'restApiDefaultCall', 
-                                    'SinifSeviyeleriCombo_mbllogin' => 'restApiDefaultCall',
-                                    'SinifSeviyeleri_mbllogin' => 'restApiDefaultCall',
-                                    'GnlProfil_mbllogin' => 'restApiDefaultCall', 
-                                    'KurumVePersonelDevamsizlik_mbllogin' => 'restApiDefaultCall',
-                                    'GelenMesajDetay_mbllogin' => 'restApiDefaultCall',
-                                    'OdevListesiOgrenciveYakin_mbllogin' => 'restApiDefaultCall',
-                                    'MuhBorcluSozlesmeleri_mbllogin' => 'restApiDefaultCall',
-                                    'MuhBorcluOdemePlani_mbllogin' => 'restApiDefaultCall',
-                                    'DashboarddataDersProgrami_mbllogin' => 'restApiDefaultCall',
-                                    'DashboardIconCounts_mbllogin' => 'restApiDefaultCall',
-                                    'SendMesajDefault_mbllogin' => 'restApiDefaultCall',
-                                    'GidenMesajListesi_mbllogin' => 'restApiDefaultCall',
-                                    'MuhYapilacakTahsilatlarA_mbllogin' => 'restApiDefaultCall',
-                                    'MuhYapilacakTahsilatlarB_mbllogin' => 'restApiDefaultCall',
-                                    'MuhYapilacakTahsilatlarC_mbllogin' => 'restApiDefaultCall',
-                                    'OdevTipleri_mbllogin' => 'restApiDefaultCall',
-                                    'OdevAtama_mbllogin' => 'restApiDefaultCall',
-                                    'OgrenciKarnesi_mbllogin' => 'restApiDefaultCall',
-                                    'MsjGonderilecekRoller_mbllogin' => 'restApiDefaultCall',
-                                    'MsjIcinOkulListesi_mbllogin' => 'restApiDefaultCall',
-                                    'MsjIcinOkuldakiSinifListesi_mbllogin' => 'restApiDefaultCall',
-                                    'MsjIcinSinifOgrenciVeliListesi_mbllogin' => 'restApiDefaultCall',
-                                    'MsjIcinPersonelListesi_mbllogin' => 'restApiDefaultCall', 
-                                    'MsjIcinOgretmenListesi_mbllogin' => 'restApiDefaultCall',
-                                    'Msjcombo1_mbllogin' => 'restApiDefaultCall',
-                                    'Msjcombo2_mbllogin' => 'restApiDefaultCall',
-                                    'Msjcombo3_mbllogin' => 'restApiDefaultCall',
-                                    'Msjcombo4_mbllogin' => 'restApiDefaultCall',
-                                    'MesajTipleri_mbllogin' => 'restApiDefaultCall',
-                                    'Ogretmensubelistesi_mbllogin' => 'restApiDefaultCall',
-                                    'OgretmenSinavDersleriListesi_mbllogin' => 'restApiDefaultCall',
-                                    'OgretmenSinavaGirenSubeler_mbllogin' => 'restApiDefaultCall',
-                                    'KyOgretmenOdevListeleri_mbllogin' => 'restApiDefaultCall',
-                                    'OgrenciVeliIcinOgretmenListesi_mbllogin' => 'restApiDefaultCall',
-                                    'OgrencininAldigiNotlar_mbllogin' => 'restApiDefaultCall',
-                                    'OgrencilerinAldigiNotlarSinavBazli_mbllogin' => 'restApiDefaultCall',
-                                    'OgretmenSinavSorulariKDK_mbllogin' => 'restApiDefaultCall',
-                                    'OgrenciOdeviGordu_mbllogin' => 'restApiDefaultCall',
-                                    'OdevOnayTipleri_mbllogin' => 'restApiDefaultCall',
-                                    'TopluOgrenciCevap_mbllogin' => 'restApiDefaultCall',
-                                    'OgrenciSinavitapcikKaydet_mbllogin' => 'restApiDefaultCall',
-                                    'OgrenciSinaviSonuclariOnay_mbllogin' => 'restApiDefaultCall',
-                                    'SinavdaKullanilanKitaplar_mbllogin' => 'restApiDefaultCall', 
-                                    'OgrenciSinaviSonuclariKaydet_mbllogin' => 'restApiDefaultCall',
-                                    'OgrencininSinavlistesi_mbllogin' => 'restApiDefaultCall',
-                                    'OgretmenProgramindakiDersler_mbllogin' => 'restApiDefaultCall',
-        
-        
-                    /** ---------rpt  */ 
-                     
-                                    'OgrenciSinavDetayRpt_mbllogin' => 'restApiDefaultCall',
-                                    'OgrenciSinavSonucListesiRpt_mbllogin' => 'restApiDefaultCall',
-        
-        
-                    /*---------rpt */
-
-        //**---- MblLogin -------------------        
-        
-        
-        
-          
-         //** MobilSettings ----------------------
-                                    'mobilUrlData_mobilsettings' => 'restApiDefaultCall',
-                                    'MobilwsdlEncryptPassword_mobilsettings' => 'restApiDefaultCall',
-                                    'MobilwsdlDecryptPassword_mobilsettings' => 'restApiDefaultCall',
-                                
-        
-        //**---- MobilSettings -------------------        
+     
         
           //**---- mobileUserMessages -------------------   
+                           
                             'GetSemesters_mobileusermessages' => 'restApiDefaultCall',
         
         
         
-        
           //**---- mobileUserMessages -------------------   
         
         
         
+         
+          //**---- InfoCenterCities -------------------   
+                          'FillMainCities_infocentercities' => 'restApiDefaultCall',
         
+        
+        
+        
+          //**---- InfoCenterCities -------------------   
         
         
         //** leftnavigation ----------------------
@@ -1318,12 +1232,8 @@ class SlimHmacProxy extends \Proxy\Proxy {
             $this->setRestApiEndPoint('syssectors.php/');
             //    print_r($this->restApiBaseUrl.$this->restApiEndPoint.$this->restApiEndPointFunction);
             $this->setRestApiFullPathUrl($this->restApiBaseUrl . $this->restApiEndPoint . $this->restApiEndPointFunction);
-        }   else if (substr($endPointFunction, -9) == '_mbllogin') {
-            $this->setRestApiEndPoint('mbllogin.php/');
-            //    print_r($this->restApiBaseUrl.$this->restApiEndPoint.$this->restApiEndPointFunction);
-            $this->setRestApiFullPathUrl($this->restApiBaseUrl . $this->restApiEndPoint . $this->restApiEndPointFunction);
-        }   else if (substr($endPointFunction, -14) == '_mobilsettings') {
-            $this->setRestApiEndPoint('mobilsettings.php/');
+        }   else if (substr($endPointFunction, -17) == '_infocentercities') {
+            $this->setRestApiEndPoint('infocentercities.php/');
             //    print_r($this->restApiBaseUrl.$this->restApiEndPoint.$this->restApiEndPointFunction);
             $this->setRestApiFullPathUrl($this->restApiBaseUrl . $this->restApiEndPoint . $this->restApiEndPointFunction);
         }   else if (substr($endPointFunction, -19) == '_mobileusermessages') {
