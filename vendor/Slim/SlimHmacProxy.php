@@ -36,12 +36,44 @@ class SlimHmacProxy extends \Proxy\Proxy {
         
          
           //**---- InfoCenterCities -------------------   
-                          'FillMainCities_infocentercities' => 'restApiDefaultCall',
-        
+                        'FillMainCities_infocentercities' => 'restApiDefaultCall',
+                        'FillMainCityBorough_infocentercities' => 'restApiDefaultCall',
+                    //    'FillMainCityBoroughVillage_infocentercities' => 'restApiDefaultCall',
         
         
         
           //**---- InfoCenterCities -------------------   
+        
+         
+          //**---- SysCenters -------------------   
+                        'FillGetCenters_syscenters' => 'restApiDefaultCall',
+                        'FillGetCentersPictures_syscenters' => 'restApiDefaultCall',
+                    //    'FillMainCityBoroughVillage_infocentercities' => 'restApiDefaultCall',
+        
+        
+        
+          //**---- SysCenters -------------------   
+          
+          //**---- InfoCenterPictures -------------------   
+                        'FillMainPictures_infocenterpictures' => 'restApiDefaultCall',
+                        'FillMainCenterPictures_infocenterpictures' => 'restApiDefaultCall',
+                        'FillMainOfisPictures_infocenterpictures' => 'restApiDefaultCall',
+        
+        
+        
+          //**---- InfoCenterPictures -------------------   
+        
+          //**---- InfoCenter -------------------   
+                        'FillCentersCraftsList_infocenter' => 'restApiDefaultCall',
+                        'FillCentersCraft_infocenter' => 'restApiDefaultCall', 
+                        'FillOfficeInfo_infocenter' => 'restApiDefaultCall',
+        
+        
+          //**---- InfoCenter -------------------   
+        
+        
+        
+        
         
         
         //** leftnavigation ----------------------
@@ -1238,6 +1270,18 @@ class SlimHmacProxy extends \Proxy\Proxy {
             $this->setRestApiFullPathUrl($this->restApiBaseUrl . $this->restApiEndPoint . $this->restApiEndPointFunction);
         }   else if (substr($endPointFunction, -19) == '_mobileusermessages') {
             $this->setRestApiEndPoint('mobileusermessages.php/');
+            //    print_r($this->restApiBaseUrl.$this->restApiEndPoint.$this->restApiEndPointFunction);
+            $this->setRestApiFullPathUrl($this->restApiBaseUrl . $this->restApiEndPoint . $this->restApiEndPointFunction);
+        }   else if (substr($endPointFunction, -11) == '_syscenters') {
+            $this->setRestApiEndPoint('syscenters.php/');
+            //    print_r($this->restApiBaseUrl.$this->restApiEndPoint.$this->restApiEndPointFunction);
+            $this->setRestApiFullPathUrl($this->restApiBaseUrl . $this->restApiEndPoint . $this->restApiEndPointFunction);
+        }   else if (substr($endPointFunction, -19) == '_infocenterpictures') {
+            $this->setRestApiEndPoint('infocenterpictures.php/');
+            //    print_r($this->restApiBaseUrl.$this->restApiEndPoint.$this->restApiEndPointFunction);
+            $this->setRestApiFullPathUrl($this->restApiBaseUrl . $this->restApiEndPoint . $this->restApiEndPointFunction);
+        }   else if (substr($endPointFunction, -11) == '_infocenter') {
+            $this->setRestApiEndPoint('infocenter.php/');
             //    print_r($this->restApiBaseUrl.$this->restApiEndPoint.$this->restApiEndPointFunction);
             $this->setRestApiFullPathUrl($this->restApiBaseUrl . $this->restApiEndPoint . $this->restApiEndPointFunction);
         }
